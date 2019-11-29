@@ -9,5 +9,10 @@ public class InterfaceExample {
         pikachu.setPokeValue(25);
         pikachu.setGender("Male");
         System.out.println(pikachu.toString());
+        pikachu.fireBreath();
+
+        WaterTypes raichu = new WaterTypes();
+        raichu.setName("Raichu");
+        raichu.WaterBeam();
     }
 }
