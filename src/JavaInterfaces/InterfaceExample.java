@@ -2,12 +2,12 @@ package JavaInterfaces;
 
 public class InterfaceExample {
     public static void main(String[] args) {
-        Pokemon pikachu = new Pokemon();
+        FireTypes pikachu = new FireTypes();
         pikachu.setDamage((short) 80);
         pikachu.setName("Pikachu");
-        pikachu.setElement("Electric");
         pikachu.setEvoTo("Raichu");
         pikachu.setPokeValue(25);
-        System.out.println("hey");
+        pikachu.setGender("Male");
+        System.out.println(pikachu.toString());
     }
 }

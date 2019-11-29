@@ -2,16 +2,20 @@ package JavaInterfaces;
 
 public class Pokemon {
 
-    private String name, element, gender, evoFrom, evoTo;
+    private String name, gender, evoFrom, evoTo;
     private int pokeValue;
     private short damage;
 
 
     public Pokemon(){}
 
+    public boolean deathStatus(){
+        return false;
+    }
+
     @Override
     public String toString(){
-        String beskrivelse ="Pokemon " + name + pokeValue;
+        String beskrivelse ="Pokemon: \n" + name+ "\n" + "Pokedex Number: \n" + pokeValue +"\n"+"Pokemon Gender: \n"+ gender +"\nCurrent Pokemon Attack damage:\n"+damage ;
         return beskrivelse;
     }
 
@@ -21,14 +25,6 @@ public class Pokemon {
 
     public void setName(String name) {
         this.name = name;
-    }
-
-    public String getElement() {
-        return element;
-    }
-
-    public void setElement(String element) {
-        this.element = element;
     }
 
     public String getGender() {
